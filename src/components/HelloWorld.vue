@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { showToast } from 'vant'
 
 defineProps<{ msg: string }>()
 
@@ -7,6 +8,7 @@ const count = ref(0)
 </script>
 
 <template>
+  <van-button type="primary" @click="showToast('321')">213</van-button>
   <h1>{{ msg }}</h1>
 
   <div class="card">
